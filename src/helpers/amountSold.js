@@ -4,6 +4,6 @@ function amountSold(){
     for (let i = 0; i < inventory.length; i++){
         amount += inventory[i].sold;
     }
-    return amount
+    return amount;
 }
 export default amountSold;
