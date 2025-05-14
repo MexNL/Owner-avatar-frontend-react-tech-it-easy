@@ -9,4 +9,18 @@
 .wrapperBoxOne{
     display: flex;
     flex-direction: row;
+    margin: 50px;
+}
+
+.wrapperBoxTwo{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.boxTwo{
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
 }

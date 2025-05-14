@@ -2,6 +2,10 @@ import './App.css';
 import amountBought from './helpers/amountBought.js'
 import amountSold from './helpers/amountSold.js'
 import amountLeft from './helpers/amountLeft.js'
+import screenSize from './helpers/screenSize.js'
+import productView from './helpers/productView.js'
+import {bestSellingTv} from "./constants/inventory.js";
+import priceView from "./helpers/priceView.js";
 
 function App() {
     return (
@@ -21,6 +25,14 @@ function App() {
                     <article className='boxOne'>
                         <p>Aantal te verkopen producten</p>
                         <p>{amountLeft()}</p>
+                    </article>
+                </div>
+                <div className='wrapperBoxTwo'>
+                    <span><img src={bestSellingTv.sourceImg} alt='Foto van TV'/></span>
+                    <article className='boxTwo'>
+                        <p>{productView()}</p>
+                        <p>{priceView(549)}</p>
+                        <p>{screenSize()}</p>
                     </article>
                 </div>
 
