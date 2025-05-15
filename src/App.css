@@ -58,12 +58,29 @@
     flex-direction: column;
 
 }
-.detailsTv{
+.detailsTv {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
     border: 2px dotted black;
+    padding: 10px;
+
+}
+
+.detailsTv{
+    border: 2px dotted black;
+    align-content: center;
+    vertical-align: center;
 }
 .detailsTv img{
     height: 15px;
-    align-items: center;
+
 }
+
+.threeButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;Meest geschikt voor sport eerst
+}
+
+

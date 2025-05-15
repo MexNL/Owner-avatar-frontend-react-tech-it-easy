@@ -40,8 +40,15 @@ function App() {
                             src="src/assets/check.png" alt='plus'/><p>bluetooth</p><img src='src/assets/minus.png'
                                                                                         alt='minus'/><p>ambilight</p>
                         </div>
-
                     </article>
+                </div>
+                <div className="threeButtons">
+                    <button type='button' onClick={() => console.log('Meest verkocht eerst')}>Meest verkocht eerst
+                    </button>
+                    <button type='button' onClick={() => console.log('Goedkoopste eerst')}>Goedkoopste eerst
+                    </button>
+                    <button type='button' onClick={() => console.log('Meest geschikt voor sport eerst')}>Meest geschikt voor sport eerst
+                    </button>
                 </div>
 
             </main>
