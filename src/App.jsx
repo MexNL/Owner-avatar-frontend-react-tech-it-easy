@@ -18,21 +18,29 @@ function App() {
                         <p>Aantal verkochte producten</p>
                         <p>{amountSold()}</p>
                     </article>
-                    <article className='boxOne'>
+                    <article className='boxTwo'>
                         <p>Aantal ingekochte producten</p>
                         <p>{amountBought()}</p>
                     </article>
-                    <article className='boxOne'>
+                    <article className='boxThree'>
                         <p>Aantal te verkopen producten</p>
                         <p>{amountLeft()}</p>
                     </article>
                 </div>
+                <h3>Best verkochte tv</h3>
                 <div className='wrapperBoxTwo'>
-                    <span><img src={bestSellingTv.sourceImg} alt='Foto van TV'/></span>
-                    <article className='boxTwo'>
+                    <img src={bestSellingTv.sourceImg} alt='Foto van TV'/>
+                    <article className='boxOneTwo'>
                         <p>{productView()}</p>
                         <p>{priceView(549)}</p>
                         <p>{screenSize()}</p>
+                        <div className='detailsTv'><img src="src/assets/check.png" alt='plus'/><p>wifi</p><img
+                            src='src/assets/minus.png' alt='minus'/><p>speech</p><img src="src/assets/check.png"
+                                                                                      alt='plus'/><p>hdr</p><img
+                            src="src/assets/check.png" alt='plus'/><p>bluetooth</p><img src='src/assets/minus.png'
+                                                                                        alt='minus'/><p>ambilight</p>
+                        </div>
+
                     </article>
                 </div>
 

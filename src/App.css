@@ -1,26 +1,69 @@
+
 .boxOne{
-    background-color: forestgreen;
-    border: 3px solid black;
+    border: 2px solid rgb(0, 204, 0, 0.4);
+    background-color: rgb(0, 204, 0, 0.2);
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    align-items: center;
+}
 
+.boxTwo{
+    border: 2px solid rgb(0, 0, 255, 0.4);
+    background-color: rgb(0, 0, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.boxThree{
+    border: 2px solid rgb(255, 0, 0, 0.4);
+    background-color: rgb(255, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    align-items: center;
 }
 
 .wrapperBoxOne{
     display: flex;
     flex-direction: row;
     margin: 50px;
+    gap: 50px;
+    justify-content: space-between;
 }
 
 .wrapperBoxTwo{
     display: flex;
     flex-direction: row;
     margin: 50px;
+    border: 2px dotted grey;
+    gap: 25px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    padding: 50px;
 }
 
-.boxTwo{
-    background-color: cornflowerblue;
-    border: 3px solid black;
+.wrapperBoxTwo img{
+    height: 150px;
+    margin-top: 50px;
+}
+
+.boxOneTwo{
     display: flex;
     flex-direction: column;
+
+}
+.detailsTv{
+    display: flex;
+    flex-direction: row;
+    border: 2px dotted black;
+}
+.detailsTv img{
+    height: 15px;
+    align-items: center;
 }
