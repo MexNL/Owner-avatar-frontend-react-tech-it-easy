@@ -7,6 +7,7 @@ import productView from './helpers/productView.js'
 import {bestSellingTv} from "./constants/inventory.js";
 import priceView from "./helpers/priceView.js";
 
+
 function App() {
     return (
         <>
@@ -50,7 +51,9 @@ function App() {
                     <button type='button' onClick={() => console.log('Meest geschikt voor sport eerst')}>Meest geschikt voor sport eerst
                     </button>
                 </div>
+                <div>
 
+                </div>
             </main>
 
 
