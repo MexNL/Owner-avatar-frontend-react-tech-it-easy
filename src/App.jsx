@@ -4,8 +4,9 @@ import amountSold from './helpers/amountSold.js'
 import amountLeft from './helpers/amountLeft.js'
 import screenSize from './helpers/screenSize.js'
 import productView from './helpers/productView.js'
-import {bestSellingTv} from "./constants/inventory.js";
+import {bestSellingTv, inventory} from "./constants/inventory.js";
 import priceView from "./helpers/priceView.js";
+import ProductBrands from "./components/ProductBrands.jsx"
 
 
 function App() {
@@ -48,11 +49,12 @@ function App() {
                     </button>
                     <button type='button' onClick={() => console.log('Goedkoopste eerst')}>Goedkoopste eerst
                     </button>
-                    <button type='button' onClick={() => console.log('Meest geschikt voor sport eerst')}>Meest geschikt voor sport eerst
+                    <button type='button' onClick={() => console.log('Meest geschikt voor sport eerst')}>Meest geschikt
+                        voor sport eerst
                     </button>
                 </div>
                 <div>
-
+                    <ProductBrands/>
                 </div>
             </main>
 
