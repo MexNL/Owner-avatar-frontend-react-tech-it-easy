@@ -17,5 +17,18 @@ const tvNameSearch = inventory.find((tv) => tv.type === 'NH3216SMART');
 // console.log(tvNameSearch);
 
 //opdracht 1d
-
+const tvSpeed = inventory.map((tv) => {
+    if (tv.refreshRate >= 100) {
+        return {
+            name: `${tv.name}`,
+            suitable: tv.refreshRate >= 100
+        };
+    } else {
+        return {
+            name: `${tv.name}`,
+            suitable: false
+        };
+    }
+})
+// console.log(tvSpeed)
 
