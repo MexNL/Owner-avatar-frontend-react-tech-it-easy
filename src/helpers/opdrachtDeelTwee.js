@@ -32,3 +32,15 @@ const tvSpeed = inventory.map((tv) => {
 })
 // console.log(tvSpeed)
 
+//opdracht 1e
+const screenSize = inventory.filter(tv =>
+    tv.availableSizes.find(size => size >= 65)
+);
+// console.log(screenSize);
+
+//opdracht 1f
+const ambiLight = inventory.filter(tv =>
+    tv.options.find(size => tv.options[4].applicable === true)
+);
+// console.log(ambiLight);
+
