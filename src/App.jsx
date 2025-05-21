@@ -8,7 +8,7 @@ import {bestSellingTv, inventory} from "./constants/inventory.js";
 import priceView from "./helpers/priceView.js";
 import ProductBrands from "./components/ProductBrands.jsx"
 import ProductCard from "./components/ProductCard.jsx";
-
+import {mostSold, mostFast, mostCheap} from "./helpers/mostSold.js";
 
 function App() {
     return (
@@ -46,11 +46,11 @@ function App() {
                     </article>
                 </div>
                 <div className="threeButtons">
-                    <button type='button' onClick={() => console.log('Meest verkocht eerst')}>Meest verkocht eerst
+                    <button type='button' onClick={mostSold}>Meest verkocht eerst
                     </button>
-                    <button type='button' onClick={() => console.log('Goedkoopste eerst')}>Goedkoopste eerst
+                    <button type='button' onClick={mostCheap}>Goedkoopste eerst
                     </button>
-                    <button type='button' onClick={() => console.log('Meest geschikt voor sport eerst')}>Meest geschikt
+                    <button type='button' onClick={mostFast}>Meest geschikt
                         voor sport eerst
                     </button>
                 </div>
