@@ -7,6 +7,7 @@ import productView from './helpers/productView.js'
 import {bestSellingTv, inventory} from "./constants/inventory.js";
 import priceView from "./helpers/priceView.js";
 import ProductBrands from "./components/ProductBrands.jsx"
+import ProductCard from "./components/ProductCard.jsx";
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
                 <div>
                     <ProductBrands/>
                 </div>
+                <ProductCard/>
             </main>
 
 
