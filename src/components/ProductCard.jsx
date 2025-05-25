@@ -1,5 +1,4 @@
 import {bestSellingTv, inventory} from "../constants/inventory.js";
-import productView from "../helpers/productView.js";
 import priceView from "../helpers/priceView.js";
 import screenSize from "../helpers/screenSize.js";
 
@@ -11,7 +10,7 @@ const ProductCard = () => {
                     <div className='wrapperBoxTwo'>
                         <img src={tv.sourceImg} alt={`Foto van ${tv.name}`} />
                         <article className='boxOneTwo'>
-                            <p>{productView(tv)}</p>
+                            <p>{tv.name} {tv.brand} {tv.type}</p>
                             <p>{priceView(tv.price)}</p>
                             <p>{screenSize(tv)}</p>
                             <ul>

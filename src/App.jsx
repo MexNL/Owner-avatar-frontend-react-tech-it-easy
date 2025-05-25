@@ -3,7 +3,6 @@ import amountBought from './helpers/amountBought.js'
 import amountSold from './helpers/amountSold.js'
 import amountLeft from './helpers/amountLeft.js'
 import screenSize from './helpers/screenSize.js'
-import productView from './helpers/productView.js'
 import {bestSellingTv, inventory} from "./constants/inventory.js";
 import priceView from "./helpers/priceView.js";
 import ProductBrands from "./components/ProductBrands.jsx"
@@ -34,7 +33,7 @@ function App() {
                 <div className='wrapperBoxTwo'>
                     <img src={bestSellingTv.sourceImg} alt='Foto van TV'/>
                     <article className='boxOneTwo'>
-                        <p>{productView()}</p>
+                        {/*<p>{productView()}</p>*/}
                         <p>{priceView(549)}</p>
                         <p>{screenSize()}</p>
                         <div className='detailsTv'><img src="src/assets/check.png" alt='plus'/><p>wifi</p><img
